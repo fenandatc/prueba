@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html  >
+<head>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="css1/practicaDeElDom.css">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<title>--Practica de el Dom--</title>
+</head>
+<body data-dark>
+<header class="header"data-dark >
+	<h1>Ejercicios Dom</h1>
+</header>
+
+
+<button class="panel-btn hamburger--emphatic " id="panel-btn" type="button"  >
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+<aside class="panel"id="panel-de-sectores-padre" data-dark>
+<nav class="menu">
+	<a href="#seccion1"  data-scroll-spy class="panel-link">reloj y alarma</a>
+	<a href="#seccion2"  data-scroll-spy class="panel-link">movimiento de teclado</a>
+	<a href="#seccion3" data-scroll-spy class="panel-link">cuentaregresiva</a>
+	<a href="#seccion4" data-scroll-spy class="panel-link">Responsive con JavaScript</a>
+	<a href="#seccion5" data-scroll-spy class="panel-link">Responsive Tester</a>
+	<a href="#seccion6" data-scroll-spy class="panel-link">Detección de Dispositivos User Agente</a>
+	<a href="#seccion7" data-scroll-spy class="panel-link">Detección del estado de la red</a>
+	<a href="#seccion8" data-scroll-spy class="panel-link">Detección de la Geolocalización</a>
+	<a href="#seccion9" data-scroll-spy class="panel-link">Filtros de Búsqueda</a>
+	<a href="#seccion10" data-scroll-spy class="panel-link"> Sorteo Digital</a>
+	<a href="#seccion11" data-scroll-spy class="panel-link"> Slider en javascrip</a>
+	<a href="#seccion12" data-scroll-spy class="panel-link"> Sorteo Digital</a>
+	<a href="#seccion13" data-scroll-spy class="panel-link"> Sorteo Digital</a>
+
+</nav> 
+</aside>
+
+<main data-dark >
+	<section id="seccion1" class="section" data-scroll-spy>
+		<h3>Reloj Digital y Alarma Sonora</h3>
+		<!-- EL <div id="reloj"></div> VA SOLOL PARA QUE NO DESAPARESCA LAS OBCIONES SI NO QUE TODO CAMBIO SE IMPLEMENTE EN EL DIV <div id="reloj"></div> -->
+
+		<div id="reloj"></div>
+		<div >
+			 <button  class="boton-reloj" id="activar-reloj">Iniciar Reloj</button>
+             <button  class="boton-reloj"id="desactivar-reloj">Detener Reloj</button>
+             <button class="boton-reloj" id="activar-alarma">Iniciar Alarma</button>
+             <button  class="boton-reloj" id="desactivar-alarma">Detener Alarma</button>
+		<!-- TAMB BA DENTRO PARA Q NO DESAPESCA MENU Y TODO CAMBIO SE DE EN EL 
+		<div id="reloj"></div>  -->
+		<!-- ESTO ES NECESARIO PARA UN AUDIO UN SOURCE -->
+		    <audio id="audio">
+                    <source type="audio/mp3" src="http://www.sonidosmp3gratis.com/sounds/mario-bros%20tuberia.mp3">
+            </audio>
+        </div> 
+  </section>
+	<section id="seccion2" class="section" data-scroll-spy>
+		<h3>Evento Teclado</h3>
+   <section id="mapa" class="mapa">
+   	<div id="pelota" class="personaje"></div>
+   </section>
+	<input type="password" id="controladorPelota" name="controlador" placeholder="Hacer click aqui para controlar Pelota ">
+										    
+   </section>
+			<!-- SEGUNDA MANERA DE EVENTOS DE EL TECLADO  -->						<!-- U+1F4A3 U+FE0E	 -->                                                    <!--<section id="seccion2"           class="section"><h2>movimientos de teclado</h2>					 article class="stage"><div class="ball">ESTO NO FUNCIONO ASIQ PROBLE CON OTRO</div></article></section>-->	
+		                              
+	<section id="seccion3" class="section" data-scroll-spy>
+		<h3>Cuenta Regresiva</h3>
+		<div id="countdown"></div>
+	</section>
+	<section id="seccion4" class="section">
+		<h3> Responsive con JavaScript </h3>
+		<div id="estilosResponsive">
+		<div id="yotube"></div>
+		<div id="mapaGoogle"></div>
+	</div>
+	</section>
+	<section id="seccion5" class="section" data-scroll-spy>
+		<h2>Responsive Tester</h2>
+		<form  id="responsive-tester">
+			<input class="tester" type="url" name="direccion" placeholder="URL" required="">
+			 <br>
+			<input class="tester"type="text" name="ancho" placeholder="Ancho" required="">
+			<br>
+			<input class="tester"type="text" name="alto" placeholder="Alto" required="">
+			<br>
+<!-- cuando es input tipo boton se utilisa value ,,,caundo es tipo formulario se utiliza placeholdeeeer -->
+			<input type="submit" name="probar" value="Probar" required="" class="btntester">
+			<input type="button" name="cerrar" value="Cerrar" required="" class="btntester">
+		</form>
+		
+	</section>
+
+	<section id="seccion6" class="section" data-scroll-spy>
+		<h2>Detección de Dispositivos <br> (User Agent)</h2>
+		<!-- nombre de el dispositivo -->
+		<div id="user-device"></div>
+	</section>
+
+	<section id="seccion7" class="section" data-scroll-spy>
+		<h2>Detección del estado de la red</h2>
+			<p>AQUI NO ME DEJA X UN BUG DE LA COMPUTADORA</p>
+		
+	</section>
+
+	<section id="seccion8" class="section" data-scroll-spy>
+		<h2>Detección de la Geolocalización</h2>
+		<div id="geolocation"></div>
+		
+	</section>		
+
+	<section id="seccion9" class="section" data-scroll-spy>
+		<h2>Filtros de Búsqueda</h2>
+		<input type="search" placeholder="Buscar" class="card-filter">
+		<article class="cards">
+	<figure class="card"> <img src="https://placeimg.com/200/200/any" alt="Any"> <figcaption>Any</figcaption></figure>
+	<figure class="card"> <img src="https://placeimg.com/200/200/arch" alt="Architecture"><figcaption>Arquitectura</figcaption></figure>
+	<figure class="card"> <img src="https://placeimg.com/200/200/people" alt="People"> <figcaption>People</figcaption></figure>
+	<figure class="card"> <img src="https://placeimg.com/200/200/nature" alt="Nature"> <figcaption>Nature</figcaption></figure>
+	<figure class="card"> <img src="https://placeimg.com/200/200/animals" alt="Animales"> <figcaption>Animales</figcaption></figure>
+	<figure class="card"> <img src="https://placeimg.com/200/200/tech" alt="Tecnologia"> <figcaption>Tecnologia</figcaption></figure>
+	<figure class="card"> <img src="https://cn.i.cdn.ti-platform.com/content/334/showpage/el-asombroso-mundo-de-gumball/es/gumball-200x200.png" alt="gomball"> <figcaption>gomball</figcaption></figure>
+	<figure class="card"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8YpUQ1DUovG7saSAYcIL1pMIav7OcmjGVtg&usqp=CAU" alt="barbie"> <figcaption>barbie</figcaption></figure>
+	<figure class="card"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ94W5NK5BzvQLLDEqkH3qEr_A2GL1HXEcVOw&usqp=CAU" alt="nagi"> <figcaption>nagi</figcaption></figure>
+	<figure class="card"> <img src="https://static.vix.com/es/sites/default/files/styles/thumbnail/public/btg/bodyart.batanga.com/files/El-nivel-mas-dificil-de-Mario-Bros-que-haya-existido-jamas-1.jpg" alt="mario broz"> <figcaption>mario broz</figcaption></figure>
+	<figure class="card"> <img src="https://images6.fanpop.com/image/photos/43000000/Felix-Icons-stray-kids-F0-9F-8C-BA-43028148-200-200.png" alt="felix"> <figcaption>felix</figcaption></figure>
+	<figure class="card"> <img src="https://pm1.narvii.com/6219/13104408c346b210405a73bbf1cd1d7c7b076493_00.jpg" alt="nathaniel"> <figcaption>nathaniel</figcaption></figure>
+	
+		</article>
+	
+		
+	</section>
+
+	<section id="seccion10" class="section" data-scroll-spy>
+		<h2> Sorteo Digital</h2>
+		<ul  class="players">
+			<li class="player">Nicolas</li>
+			<li class="player">ramona</li>
+			<li class="player">Barbie</li>
+			<li class="player">Nathaniel</li>
+			<li class="player">Nagi</li>
+			<li class="player">Lune</li>
+			<li class="player">Gomball</li>
+			<li class="player">Darli</li>
+			<li class="player">Mariana</li>
+			<li class="player">Ana</li>
+		</ul>
+		<button id="winner-btn" class="winner-btn">OBTENER EL GANADOR</button>
+		
+	</section>
+<!--  Responsive Slider -->
+	<section id="seccion11" class="section" data-scroll-spy>
+		<h3>slider javascricpt</h3>
+		<div class="slider">
+			<div class="slider-slides">
+				<div class="slider-slide active"><img src="https://www.xgn.nl/images/articles/2020/202006/_970x545_crop_center-center_82_line/0mistic4.jpg" alt="mssing"></div>
+
+			<div class="slider-slide">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrf_q413e2DfZbsVZROinpJE0JTkcd8UOkdQ&usqp=CAU">
+				</div>
+
+
+				<div class="slider-slide"><img src="https://archive-media-0.nyafuu.org/vp/image/1528/45/1528454080454.png" alt="picachu"></div>	
+			
+				<div class="slider-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRgxV76aeOIKE8o6joFtFEgv3tm8kz6KGPcGg&usqp=CAU" alt="fall guys"></div>
+				
+			</div>
+
+		<div class="slider-btns"><a id="previos" href="#">&laquo;</a><a id="next" href="#">&raquo;</a></div>
+			
+		</div>
+
+
+	</section>
+<!--  ScrollSpy con Intersection Observer -->
+	<section id="seccion12" class="section" data-scroll-spy>
+		<h3> ScrollSpy con Intersection Observer</h3>
+
+	</section>
+
+	<section id="seccion13" class="section" data-scroll-spy>
+		<h3>Cuenta Regresiva</h3>
+	
+	</section>
+</main>
+<!-- AQI ESTA EL LINK DE LOS CODIGOS PARA MAS IMAGNES POR DEFECTO---https://www.mclibre.org/consultar/htmlcss/html/html-unicode-simbolos.html
+	www134
+	isabelcanaricamayo@hotmail.com
+fernandabella123 -->
+
+<button class="scroll-top-btn hidden">&#11014</button>
+<button class="drak-theme-Light"></button>
+<!-- https://stev-189.github.io/Ejercicio_DOM/# -->
+<script src="js1/practicaDeElDom.js"  ></script>
+</body>
+</html>
